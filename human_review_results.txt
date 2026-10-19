@@ -1,0 +1,58 @@
+Raters: R1, R2 | items rated: 78
+
+SUMMARIES: mean score (1-5), n = summaries rated
+Method            n    Coverage  Accuracy  Readability 
+studymate         6    3.83      4.83      4.00        
+lead_n_baseline   6    2.00      5.00      5.00        
+t5_small          6    2.33      2.67      2.00        
+
+SUMMARY COVERAGE by document (mean, 1-5)
+Method            binary_search_trees     hash_tables             cellular_respiration    
+studymate         4.00                    3.00                    4.50                    
+lead_n_baseline   2.00                    2.00                    2.00                    
+t5_small          2.00                    2.00                    3.00                    
+
+QUIZ QUESTIONS: share rated Y
+Method            n    Accurate  Relevant  No clues  All three 
+studymate         30   1.00      0.63      0.63      0.57      
+lead_n_baseline   30   1.00      0.23      0.43      0.20      
+
+QUIZ 'All three = Y' by document
+  studymate         binary_search_trees: 5/10 | hash_tables: 4/10 | cellular_respiration: 8/10
+  lead_n_baseline   binary_search_trees: 3/10 | hash_tables: 1/10 | cellular_respiration: 2/10
+
+DISAGREEMENTS (same output rated differently; IDs differ per rater, so items are matched by text)
+  binary_search_trees | summary | studymate | A binary search tree, often abbreviated BST, is a binary tre...
+      coverage R1=3/R2=5
+  binary_search_trees | quiz | studymate | _____ in a binary search tree starts at the root node and co...
+      no_clues R1=N/R2=Y
+  binary_search_trees | quiz | lead_n_baseline | _____ in a binary search tree starts at the root node and co...
+      no_clues R1=N/R2=Y
+  binary_search_trees | quiz | lead_n_baseline | The _____ property of a binary search tree is that for every...
+      no_clues R1=N/R2=Y
+  binary_search_trees | quiz | studymate | If the target is smaller, the _____ moves to the left child;...
+      relevant R1=Y/R2=N
+  binary_search_trees | quiz | lead_n_baseline | _____ search trees are a fundamental data structure used to ...
+      no_clues R1=N/R2=Y
+  hash_tables | quiz | studymate | The load factor of a _____ table is the ratio of the number ...
+      no_clues R1=N/R2=Y
+  hash_tables | quiz | lead_n_baseline | A _____ hash function should distribute keys evenly across b...
+      no_clues R1=N/R2=Y
+  hash_tables | quiz | studymate | _____ up a key then requires scanning the short list in that...
+      no_clues R1=N/R2=Y
+  hash_tables | quiz | lead_n_baseline | It _____ by passing each key through a hash function, which ...
+      no_clues R1=N/R2=Y
+  hash_tables | quiz | lead_n_baseline | If two _____ keys hash to the same bucket, this is called a ...
+      no_clues R1=N/R2=Y
+  hash_tables | quiz | lead_n_baseline | That hash _____ is reduced modulo the table size to produce ...
+      relevant R1=N/R2=Y; no_clues R1=N/R2=Y
+  hash_tables | quiz | lead_n_baseline | A _____ table is a data structure that stores key-value pair...
+      no_clues R1=N/R2=Y
+  cellular_respiration | quiz | lead_n_baseline | The _____ goal of cellular respiration is to produce ATP, th...
+      no_clues R1=N/R2=Y
+  14 of 39 shared items disagree (quiz: any Y/N difference; summaries: a 2+ point gap on a 1-5 score)
+
+AGREEMENT on quiz Y/N ratings (share of identical judgments)
+  accurate   30/30 = 1.00
+  relevant   28/30 = 0.93
+  no_clues   18/30 = 0.60

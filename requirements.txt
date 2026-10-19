@@ -1,0 +1,5 @@
+transformers==5.20.1
+torch==2.14.1
+tokenizers==0.23.3
+safetensors==0.8.0
+sentencepiece

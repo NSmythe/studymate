@@ -1,0 +1,39 @@
+Case                    Method            Words%       Coverage  Quiz  Leaks 
+-----------------------------------------------------------------------------
+binary_search_trees     studymate         0.25         0.88      5     0     
+binary_search_trees     lead_n_baseline   0.28         0.50      5     0     
+binary_search_trees     t5_small          0.19         0.50      n/a   n/a   
+hash_tables             studymate         0.29         0.50      5     0     
+hash_tables             lead_n_baseline   0.26         0.25      5     0     
+hash_tables             t5_small          0.19         0.38      n/a   n/a   
+cellular_respiration    studymate         0.30         1.00      5     0     
+cellular_respiration    lead_n_baseline   0.29         0.86      5     0     
+cellular_respiration    t5_small          0.21         0.71      n/a   n/a   
+
+Concept coverage detail (which key concepts each method's summary mentions):
+
+binary_search_trees (key concepts: ['binary search tree', 'search', 'insertion', 'deletion', 'balanced', 'AVL', 'red-black', 'logarithmic'])
+  studymate: ['binary search tree', 'search', 'insertion', 'deletion', 'balanced', 'AVL', 'red-black']
+  lead_n_baseline: ['binary search tree', 'search', 'insertion', 'deletion']
+  t5_small: ['binary search tree', 'search', 'insertion', 'deletion']
+
+hash_tables (key concepts: ['hash function', 'collision', 'chaining', 'open addressing', 'load factor', 'O(1)', 'O(n)', 'rehash'])
+  studymate: ['hash function', 'collision', 'load factor', 'O(1)']
+  lead_n_baseline: ['hash function', 'collision']
+  t5_small: ['hash function', 'collision', 'chaining']
+
+cellular_respiration (key concepts: ['glycolysis', 'citric acid cycle', 'electron transport chain', 'ATP', 'mitochondria', 'oxygen', 'NADH'])
+  studymate: ['glycolysis', 'citric acid cycle', 'electron transport chain', 'ATP', 'mitochondria', 'oxygen', 'NADH']
+  lead_n_baseline: ['glycolysis', 'citric acid cycle', 'electron transport chain', 'ATP', 'oxygen', 'NADH']
+  t5_small: ['glycolysis', 'citric acid cycle', 'electron transport chain', 'oxygen', 'NADH']
+
+t5_small raw summaries (for inspection / human review):
+
+binary_search_trees (input truncated to 512 tokens: True)
+  binary search trees are a fundamental data structure used to store data in a way that allows fast lookup, insertion, and deletion. every node has at least two children, referred to as the left child and the right child. removing a node can break the ordering property if handled incorrectly. the standard approach replaces the deleted node's value with its in-order successor, which is the smallest value in its right subtree, and then deletes that successor node. in.. 'the defining property of a binary search 'de sy.
+
+hash_tables (input truncated to 512 tokens: False)
+  a hash table is a data structure that stores key-value pairs and allows near-constant-time lookup, insertion, and deletion. a good hash function should distribute keys evenly across buckets so that no single bucket becomes overloaded. one common way to handle collisions is chaining, where a colliding key is placed in a different, nearby open bucket according to a probing sequence, such as linear probing or double hashing.
+
+cellular_respiration (input truncated to 512 tokens: False)
+  cellular respiration occurs in three main stages: glycolysis, the citric acid cycle, and the electron transport chain. glycolysis does not require oxygen, and it occurs in both aerobic and anaerobic organisms. if oxygen is available, pyruvate from glycolysis is converted into a molecule called acetyl-CoA. carbon dioxide is released as a waste product and generates additional NADH and FADH2 which carry high-energy electrons forward to the next stage ......
