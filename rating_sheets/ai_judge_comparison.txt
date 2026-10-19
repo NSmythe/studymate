@@ -1,0 +1,20 @@
+AI judge vs. humans (R2, R3) | 39 items matched by text
+
+SUMMARIES: mean score (1-5), AI vs. human
+Method            Coverage AI/Hum       Accuracy AI/Hum       Readability AI/Hum    
+studymate         3.33 / 4.17          4.67 / 5.00          3.67 / 4.33          
+lead_n_baseline   2.00 / 2.00          5.00 / 5.00          5.00 / 5.00          
+t5_small          2.33 / 2.33          2.67 / 2.67          2.00 / 2.00          
+
+QUIZ QUESTIONS: share rated Y, AI vs. human
+Method            Accurate AI/Hum       Relevant AI/Hum       No_Clues AI/Hum       
+studymate         1.00 / 1.00          0.67 / 0.60          0.53 / 0.73          
+lead_n_baseline   1.00 / 1.00          0.20 / 0.27          0.13 / 0.70          
+
+AGREEMENT with human majority (duplicate questions share one human majority)
+  quiz accurate     30/30 = 1.00  (ties excluded)
+  quiz relevant     28/30 = 0.93  (ties excluded)
+  quiz no_clues     18/30 = 0.60  (ties excluded)
+  summary coverage     mean gap 0.28 pts; within 1 pt: 8/9
+  summary accuracy     mean gap 0.11 pts; within 1 pt: 9/9
+  summary readability  mean gap 0.22 pts; within 1 pt: 9/9
